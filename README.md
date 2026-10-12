@@ -15,10 +15,10 @@ locked-down host with nothing but what ships with it.
 
 - **Built-in tools only.** No installers, modules or third-party binaries, so
   they run on any current Windows install.
-- **Best effort, never brittle.** One failure skips one item, not the run;
-  results say exactly what they cover.
+- **Best effort, never brittle.** One failure skips one item, not the run.
 - **Evidence-minded.** UTC timestamps throughout, hashes where they matter,
-  and footprint and limitations stated plainly.
+  the tool's own version recorded, warnings up front, results that say
+  exactly what they cover, and footprint and limitations stated plainly.
 - **Easy to extend.** Table-driven, with small helper functions, so adding an
   artefact or a check is a row, not a rewrite.
 - **Open.** 0BSD-licensed: use them for anything, no attribution required.
