@@ -1,0 +1,24 @@
+# outis
+
+DFIR practitioner. I write small, dependable tools for incident response and
+forensic evidence handling on Windows: the kind you can run on a fresh or
+locked-down host with nothing but what ships with it.
+
+## Tools
+
+| Repository | What it does |
+|---|---|
+| [LiveResponsePSCollection](https://github.com/rbqbjyur/LiveResponsePSCollection) | Collects timeline-relevant Windows triage artefacts (artifacts) into one zip through Microsoft Defender for Endpoint Live Response - one PowerShell script, no binaries. |
+| [evidence-robocopy](https://github.com/rbqbjyur/evidence-robocopy) | Copies digital evidence (E01/EWF images and loose files) with robocopy, SHA-256 verification and chain-of-custody records - built-in tools only. |
+
+## How they're built
+
+- **Built-in tools only.** No installers, modules or third-party binaries, so
+  they run on any current Windows install.
+- **Best effort, never brittle.** One failure skips one item, not the run;
+  results say exactly what they cover.
+- **Evidence-minded.** UTC timestamps throughout, hashes where they matter,
+  and footprint and limitations stated plainly.
+- **Easy to extend.** Table-driven, with small helper functions, so adding an
+  artefact or a check is a row, not a rewrite.
+- **Open.** 0BSD-licensed: use them for anything, no attribution required.
