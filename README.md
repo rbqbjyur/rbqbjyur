@@ -8,7 +8,7 @@ locked-down host with nothing but what ships with it.
 
 | Repository | What it does |
 |---|---|
-| [defender-live-response-collector](https://github.com/rbqbjyur/defender-live-response-collector) | Collects timeline-relevant Windows triage artefacts (artifacts) into one zip through Microsoft Defender for Endpoint Live Response - one PowerShell script, no binaries. |
+| [defender-live-response-collector](https://github.com/rbqbjyur/defender-live-response-collector) | Collects timeline-relevant Windows triage artefacts (artifacts) into one zip (split into 1 GiB volumes when larger) through Microsoft Defender for Endpoint Live Response - one PowerShell script, no binaries, no child processes. |
 | [evidence-robocopy](https://github.com/rbqbjyur/evidence-robocopy) | Copies digital evidence (E01/EWF images and loose files) with robocopy, SHA-256 verification and chain-of-custody records - built-in tools only. |
 
 ## How they're built
