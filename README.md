@@ -21,9 +21,9 @@ locked-down host with nothing but what ships with it.
   is opt-in, labelled and confirmed.
 - **Auditable and readable.** UTC timestamps throughout, the tool's own
   version recorded, warnings up front, results that say exactly what they
-  cover, and footprint and limitations stated plainly. Table-driven code
-  with small helper functions and comments for intent, easy to review,
-  extend or contribute to.
+  cover, and footprint and limitations stated plainly. The code is written
+  to be read by other examiners: full-word names that say what each thing
+  is, no clever constructs, table-driven settings and comments for intent.
 - **Minimal dependencies.** Collection and evidence-handling tools use
   built-in tools only (no installers, modules or third-party binaries), so
   they run on any current Windows install; analysis tools drive established
