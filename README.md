@@ -12,7 +12,7 @@ locked-down host with nothing but what ships with it.
 |---|---|
 | [defender-live-response-collector](https://github.com/rbqbjyur/defender-live-response-collector) | Collects timeline-relevant Windows triage artefacts into one zip (split into 1 GiB volumes when larger) through Microsoft Defender for Endpoint Live Response - one PowerShell script, no binaries, no child processes. |
 | [triage-analyser](https://github.com/rbqbjyur/triage-analyser) | Runs targeted artefact parsers against Windows triage collections for quick answers without waiting for a full timeline. Currently EVTX: EvtxECmd with per-log event ID filters, one CSV per log. |
-| [evidence-robocopy](https://github.com/rbqbjyur/evidence-robocopy) | Copies digital evidence with robocopy: always logged and SHA-256 verified, with chain-of-custody records that travel with the evidence - built-in tools only. |
+| [evidence-robocopy](https://github.com/rbqbjyur/evidence-robocopy) | Copies digital evidence with robocopy: always logged and SHA-256 verified, with sealed chain-of-custody records and a copy history that travel with the evidence and are checked on every copy - built-in tools only. |
 
 ## How they're built
 
