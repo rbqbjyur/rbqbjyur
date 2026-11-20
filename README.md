@@ -10,7 +10,7 @@ locked-down host with nothing but what ships with it.
 
 | Repository | What it does |
 |---|---|
-| [defender-live-response-collector](https://github.com/rbqbjyur/defender-live-response-collector) | Collects timeline-relevant Windows triage artefacts into one zip with its SHA-256 and a per-file record (split into 1 GiB volumes when larger) through Microsoft Defender for Endpoint Live Response, and says what it couldn't collect and why - one PowerShell script, no binaries, no child processes. |
+| [latro](https://github.com/rbqbjyur/latro) | The Live Response collector: collects timeline-relevant Windows triage artefacts into one zip with its SHA-256 and a per-file record (split into 1 GiB volumes when larger) through Microsoft Defender for Endpoint Live Response, and says what it couldn't collect and why. One PowerShell script, no binaries, no child processes. |
 | [menard](https://github.com/rbqbjyur/evidence-robocopy) | Copies digital evidence with robocopy (evidence-robocopy.bat), between local drives or network shares: always logged and SHA-256 verified, with sealed chain-of-custody records and a copy history that travel with the evidence and are checked on every copy or in place (/check) - built-in tools only. |
 | [triage-analyser](https://github.com/rbqbjyur/triage-analyser) | Runs targeted artefact parsers against Windows triage collections for quick answers without waiting for a full timeline. Work in progress: currently EVTX only (EvtxECmd with per-log event ID filters, one CSV per log); more parsers under way. |
 | [fuligin](https://github.com/rbqbjyur/fuligin) | My own set-up of the common Windows forensic tools: one PowerShell script installs and updates Eric Zimmerman's tools, NirSoft and Sysinternals utilities, Arsenal Image Mounter, Velociraptor, SRUM-DUMP and DB Browser for SQLite with their prerequisites, verifying every download and recording what is installed. Shared as it is, and easy to adapt. |
@@ -26,7 +26,7 @@ locked-down host with nothing but what ships with it.
   to be read by other examiners: full-word names that say what each thing
   is, no clever constructs, table-driven settings and comments for intent.
 - **Minimal dependencies.** Collection and evidence-handling tools use
-  built-in tools only (no installers, modules or third-party binaries), so
+  built-in tools only (no installers, downloaded modules or third-party binaries), so
   they run on any current Windows install; analysis tools drive established
   open-source parsers such as EvtxECmd.
 - **Best effort, never brittle.** One failure skips one item, not the run.
